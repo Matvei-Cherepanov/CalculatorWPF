@@ -25,38 +25,38 @@
         <!--Дисплей-->
         <StackPanel Grid.Row="0" Grid.ColumnSpan="4" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10,10,10,20">
             <!--*Предыстория*-->
-            <TextBlock Text="12 × 4" Foreground="#888888" FontSize="22" HorizontalAlignment="Right" Margin="0,0,0,5"/>
+            <TextBlock Text="12 × 4" Foreground="#888888" FontSize="22" HorizontalAlignment="Right" Margin="0,0,0,5" x:Name="HistoryText"/>
             <!--Ввод-->
-            <TextBlock Text="48" Foreground="White" FontSize="64" FontWeight="Light" HorizontalAlignment="Right"/>
+            <TextBlock Text="48" Foreground="White" FontSize="64" FontWeight="Light" HorizontalAlignment="Right" x:Name="ResultText"/>
         </StackPanel>
         <!--Ряды кнопок-->
         <!--1-->
-        <Button Content="AC" Grid.Row="1" Grid.Column="0" Style="{StaticResource ActionButton}"/>
-        <Button Content="del" Grid.Row="1" Grid.Column="1" Style="{StaticResource ActionButton}"/>
-        <Button Content="%" Grid.Row="1" Grid.Column="2" Style="{StaticResource ActionButton}"/>
-        <Button Content="÷" Grid.Row="1" Grid.Column="3" Style="{StaticResource OperatorButton}"/>
+        <Button Content="AC" Grid.Row="1" Grid.Column="0" Style="{StaticResource ActionButton}" Click="ClaerButton"/>
+        <Button Content="del" Grid.Row="1" Grid.Column="1" Style="{StaticResource ActionButton}" Click="DelButton"/>
+        <Button Content="%" Grid.Row="1" Grid.Column="2" Style="{StaticResource ActionButton}" Click="WriteButton"/>
+        <Button Content="÷" Grid.Row="1" Grid.Column="3" Style="{StaticResource OperatorButton}" Click="WriteButton"/>
 
         <!--2-->
-        <Button Content="7" Grid.Row="2" Grid.Column="0" Style="{StaticResource NumberButton}"/>
-        <Button Content="8" Grid.Row="2" Grid.Column="1" Style="{StaticResource NumberButton}"/>
-        <Button Content="9" Grid.Row="2" Grid.Column="2" Style="{StaticResource NumberButton}"/>
-        <Button Content="×" Grid.Row="2" Grid.Column="3" Style="{StaticResource OperatorButton}"/>
+        <Button Content="7" Grid.Row="2" Grid.Column="0" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="8" Grid.Row="2" Grid.Column="1" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="9" Grid.Row="2" Grid.Column="2" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="×" Grid.Row="2" Grid.Column="3" Style="{StaticResource OperatorButton}" Click="WriteButton"/>
 
         <!--3-->
-        <Button Content="4" Grid.Row="3" Grid.Column="0" Style="{StaticResource NumberButton}"/>
-        <Button Content="5" Grid.Row="3" Grid.Column="1" Style="{StaticResource NumberButton}"/>
-        <Button Content="6" Grid.Row="3" Grid.Column="2" Style="{StaticResource NumberButton}"/>
-        <Button Content="−" Grid.Row="3" Grid.Column="3" Style="{StaticResource OperatorButton}"/>
+        <Button Content="4" Grid.Row="3" Grid.Column="0" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="5" Grid.Row="3" Grid.Column="1" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="6" Grid.Row="3" Grid.Column="2" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="-" Grid.Row="3" Grid.Column="3" Style="{StaticResource OperatorButton}" Click="WriteButton"/>
 
         <!--4-->
-        <Button Content="1" Grid.Row="4" Grid.Column="0" Style="{StaticResource NumberButton}"/>
-        <Button Content="2" Grid.Row="4" Grid.Column="1" Style="{StaticResource NumberButton}"/>
-        <Button Content="3" Grid.Row="4" Grid.Column="2" Style="{StaticResource NumberButton}"/>
-        <Button Content="+" Grid.Row="4" Grid.Column="3" Style="{StaticResource OperatorButton}"/>
+        <Button Content="1" Grid.Row="4" Grid.Column="0" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="2" Grid.Row="4" Grid.Column="1" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="3" Grid.Row="4" Grid.Column="2" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="+" Grid.Row="4" Grid.Column="3" Style="{StaticResource OperatorButton}" Click="WriteButton"/>
 
         <!--5-->
-        <Button Content="0" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource NumberButton}"/>
-        <Button Content="," Grid.Row="5" Grid.Column="2" Style="{StaticResource NumberButton}"/>
-        <Button Content="=" Grid.Row="5" Grid.Column="3" Style="{StaticResource OperatorButton}"/>
+        <Button Content="0" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="," Grid.Row="5" Grid.Column="2" Style="{StaticResource NumberButton}" Click="WriteButton"/>
+        <Button Content="=" Grid.Row="5" Grid.Column="3" Style="{StaticResource OperatorButton}" Click="EqualButton"/>
     </Grid>
 </Window>
